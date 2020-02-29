@@ -12,3 +12,13 @@ To run the project on iOS Simulator
 * yarn install
 * npx react-native run-ios
 ```
+
+### Improvements
+
+* I think I definitely spent a lot of time to lift the state up from parkingSpot.js to the FlatList component. I'd definitely use a state container like Redux to have less headaches.
+
+### What if there were 10,000 parking lots?
+
+* I'd only set the parkingSpots state with name and pk keys, rather than passing the whole responseJson.
+* I'd definitely implement some kind of lazy loading to the FlatList.
+* I think being able to filter the response that I get from Spots API would definitely help. There are a lot of unnecessary fields being passed with the response.

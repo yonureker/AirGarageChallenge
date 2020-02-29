@@ -10,7 +10,7 @@ const ParkingSpotList = () => {
   const [parkingSpots, setParkingSpots] = useState([]);
   const [enforcement, setEnforcement] = useState([]);
 
-  // combining parkingSpots and enforcement so I can use this for FlatArray sorting
+  // combining parkingSpots and enforcement arrays so I can use this for FlatArray sorting
   let combined = parkingSpots.map(function(item, index) {
     return {
       name: item.name,
